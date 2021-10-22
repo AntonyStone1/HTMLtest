@@ -1,0 +1,30 @@
+@media screen and (max-width: 1020px){
+    .hamburger_container {
+        display: flex;        
+    }
+    .hamburger_container-active { 
+        display: flex;
+        & .menu-icon span {
+            opacity: 1;
+        }          
+        & .menu-icon span:nth-child(1) {
+            transform-origin: center center;
+            transform: rotate(-45deg) translate(-20%, 190%);
+            width: 55px;
+        }
+        & .menu-icon span:nth-child(2) {
+            transform: translateX(50px);
+        }
+        & .menu-icon span:nth-child(3) {
+            transform-origin: center center;
+            transform: rotate(45deg) translate(-20%, -190%);
+            width: 55px;
+        }
+    }
+    .header_navigation-list {
+        position: relative;
+        left: -1000px;
+        transition: 0.3s ease;
+    }
+}
+
