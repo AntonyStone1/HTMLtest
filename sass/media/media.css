@@ -10,7 +10,7 @@
     display: flex;
     position: fixed;
     top: 60px;
-    right: 94px;
+    right: 12%;
   }
   .hamburger_container-active .menu-icon span {
     opacity: 1;
