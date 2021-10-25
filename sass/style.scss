@@ -482,11 +482,11 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: 1150px;
+    max-width: 1250px;
     overflow-y: visible;
     overflow: scroll;
     & .swiper-slide {
-        margin: 0 3%;
+        margin: 0 20px;
     }
 }
 .swiper-wrapper::-webkit-scrollbar {
