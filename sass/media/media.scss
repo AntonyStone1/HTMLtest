@@ -146,7 +146,10 @@
     }
     .contacts_list {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
+        & ul {
+            display: none;
+        }
     }
     .contacts_list-item .list {
         display: none;        
@@ -176,11 +179,11 @@
         &_info img {
             transform: scale(0.7);
         }
-    }    
-    .article_item {
-        width: 30%;
     }
-
+    .swiper-slide {
+        margin: 0 1%;
+        transform: scale(0.7);
+    }
     .footer_container {
         flex-direction: column;        
     }

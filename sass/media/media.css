@@ -174,9 +174,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contacts_list ul {
+    display: none;
   }
   .contacts_list-item .list {
     display: none;
@@ -211,8 +214,10 @@
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
-  .article_item {
-    width: 30%;
+  .swiper-slide {
+    margin: 0 1%;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   .footer_container {
     -webkit-box-orient: vertical;
