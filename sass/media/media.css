@@ -97,5 +97,107 @@
   .hero_img img {
     display: none;
   }
+  .main_services-item ul {
+    width: 300px;
+    height: 300px;
+  }
+  .features_healtcare {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features_healtcare-text {
+    margin: 0;
+    width: 100%;
+  }
+  .features_healtcare-text h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .features_healtcare-text h2::after {
+    left: 45%;
+  }
+  .features_healtcare-text p {
+    width: 100%;
+    text-align: center;
+  }
+  .features_healtcare-btn {
+    margin: 10% auto;
+  }
+  .features_healtcare-img {
+    display: none;
+  }
+  .features_aplication-img {
+    display: none;
+  }
+  .features_aplication {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features_aplication-text {
+    margin: 0;
+    width: 100%;
+  }
+  .features_aplication-text h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .features_aplication-text h2::after {
+    left: 45%;
+  }
+  .features_aplication-text p {
+    width: 100%;
+    text-align: center;
+  }
+  .features_aplication-btn {
+    margin: 10% auto;
+  }
+  .features_aplication-img {
+    display: none;
+  }
+  .features_aplication-img {
+    display: none;
+  }
+  .testimonials_container .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonials_container .user_info {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    width: auto;
+    margin-left: 10%;
+  }
+  .testimonials_container .user_review {
+    width: 80%;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .user_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5%;
+  }
+  .user_info img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 /*# sourceMappingURL=media.css.map */

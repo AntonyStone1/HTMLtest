@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -122,7 +123,7 @@
             <section class="features">
 
                 <div class="features_healtcare">
-                    <div class="features_hesltcare-img">
+                    <div class="features_healtcare-img">
                         <img src="img/features.png" alt="Features image">
                     </div>
                     <div class="features_healtcare-text">
@@ -147,7 +148,7 @@
                             instantaneously (no tedeous form, long calls, 
                             or administrative hassle) and securely</p>
                         <div class="learn_btn features_aplication-btn">
-                            <button type="button">Learn more</button>
+                            <button type="button">Download <span><img src="img/arrow.svg" alt=""></span></button>
                         </div>
                     </div>                    
                 </div>
@@ -176,12 +177,100 @@
                 </div>
             </section>
             
-        </main>
-
-        <footer class="footer">
-
-        </footer>
+            <section class="articles">
+                <div class="articles_container">
+                    <h2 class="articles_conatiner-heading">Check out our latest article</h2>
+                    <div class="article_list swiper">
+                        <div class="swiper-wrapper" >
+                            <div class="article_item swiper-slide">
+                                <ul>
+                                    <li class="article_item-img"><img src="img/diseace.png" alt="article images"></li>
+                                    <li class="article_item-description">Disease detection, check 
+                                        up in the laboratory</li>
+                                    <li class="article_item-text">In this case, the role of the health laboratory is 
+                                        very important to do
+                                        a disease detection...</li>
+                                    <li class="article_item-link">Read more</li>
+                                </ul>
+                            </div>
+                            <div class="article_item swiper-slide">
+                                <ul>
+                                    <li class="article_item-img"><img src="img/herbal.png" alt="article images"></li>
+                                    <li class="article_item-description">Herbal medicines that are 
+                                        safe for consumption</li>
+                                    <li class="article_item-text">Herbal medicine is very widely used at this 
+                                        time because of its very good for your health...</li>
+                                    <li class="article_item-link">Read more</li>
+                                </ul>
+                            </div>
+                            <div class="article_item swiper-slide">
+                                <ul>
+                                    <li class="article_item-img"><img src="img/natural.png" alt="article images"></li>
+                                    <li class="article_item-description">Natural care for healthy 
+                                        facial skin</li>
+                                    <li class="article_item-text">A healthy lifestyle should start from now 
+                                        and also for your skin health.
+                                        There are some...</li>
+                                    <li class="article_item-link">Read more</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learn_btn article-btn">
+                        <button type="button">Viev all</button>
+                    </div>
+                </div>
+            </section>
+        </main>        
     </div>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_copyright">
+                <ul class="footer_copyright-list">
+                    <li class="footer_copyright-logo"><img src="img/logo.svg" alt="logo icon"></li>
+                    <li class="footer_copyright-info">Trafalgar provides progressive, and affordable 
+                        healthcare, accessible on mobile and online 
+                        for everyone</li>
+                    <li class="footer_copyright-copy">©Trafalgar PTY LTD 2020. All rights reserved</li>
+                </ul>
+            </div>
+            <div class="footer_contacts">
+                <div class="contacts_list">
+                    <div class="contacts_list-item">
+                        <p>Company</p>
+                        <ul class="list">
+                            <li class="contacts_item">About</li>
+                            <li class="contacts_item">Testimonials</li>
+                            <li class="contacts_item">Find a doctor</li>
+                            <li class="contacts_item">Apps</li>
+                        </ul>
+                    </div>
+                    <div class="contacts_list-item">
+                        <p>Region</p>
+                        <ul class="list">
+                            <li class="contacts_item">Indonesia</li>
+                            <li class="contacts_item">Singapore</li>
+                            <li class="contacts_item">Hongkong</li>
+                            <li class="contacts_item">Canada</li>
+                        </ul>
+                    </div>
+                    <div class="contacts_list-item">
+                        <p>Help</p>
+                        <ul class="list">
+                            <li class="contacts_item">Help center</li>
+                            <li class="contacts_item">Contact support</li>
+                            <li class="contacts_item">instructions</li>
+                            <li class="contacts_item">How it works</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
     <script src="script/app.js"></script>
 </body>
 </html>

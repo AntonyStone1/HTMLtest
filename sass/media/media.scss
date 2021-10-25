@@ -62,15 +62,112 @@
         & .hero_text {
             display: flex;
             flex-direction: column;
-            
             width: 90%;
             & h1 {
                 width: 90%;
             }
         }
-        
     }
     .hero_img img {
         display: none;
     }
+
+    .main_services-item {
+        & ul {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .features {
+        &_healtcare {
+            justify-content: center;
+        }
+        &_healtcare-text {
+            margin: 0;
+            width: 100%;
+            & h2 {
+                width: 100%;                
+                text-align: center;
+            }
+            & h2::after {
+                left: 45%;
+            }
+            & p {                
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &_healtcare-btn {
+            margin: 10% auto;
+        }
+        &_healtcare-img {
+            display: none;
+        }
+        &_aplication-img {
+            display: none;
+        }
+
+
+        &_aplication {
+            justify-content: center;
+        }
+        &_aplication-text {
+            margin: 0;
+            width: 100%;
+            & h2 {
+                width: 100%;                
+                text-align: center;
+            }
+            & h2::after {
+                left: 45%;
+            }
+            & p {                
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &_aplication-btn {
+            margin: 10% auto;
+        }
+        &_aplication-img {
+            display: none;
+        }
+        &_aplication-img {
+            display: none;
+        }
+    }
+
+    .testimonials_container .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_info {
+            align-self: start;
+            width: auto;
+            margin-left: 10%;
+        }
+        &_review {
+            width: 80%;
+            margin-top: 5%;
+        }
+    }
+    
 }
+
+
+@media screen and (max-width: 500px) {
+
+    .user {
+        &_info {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5%;
+        }
+        &_info img {
+            transform: scale(0.7);
+        }
+    }
+    
+    
+} 
