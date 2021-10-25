@@ -152,7 +152,14 @@
             margin-top: 5%;
         }
     }
-    
+    .contacts_list {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .contacts_list-item .list {
+        display: none;
+        
+    }
 }
 
 
@@ -167,7 +174,22 @@
         &_info img {
             transform: scale(0.7);
         }
+    }    
+    .article_item {
+        width: 30%;
     }
-    
+
+    .footer_container {
+        flex-direction: column;        
+    }
+    .footer_copyright-info {
+        display: none;
+    }
+    .footer_copyright-copy {
+        width: 200px;
+    }
+    .contacts_list {
+        align-items: flex-start;
+    }
     
 } 
