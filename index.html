@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -23,37 +23,37 @@
                     </div>
                     <div class="header_navigation-list">
                         <ul>
-                            <li class="header_navigation-item">Home</li>
-                            <li class="header_navigation-item">Find a doctor</li>
-                            <li class="header_navigation-item">Apps</li>
-                            <li class="header_navigation-item">Testimonials</li>
-                            <li class="header_navigation-item">About us</li>
+                            <li class="header_navigation-item"><a href="#">Home</a></li>
+                            <li class="header_navigation-item"><a href="#">Find a doctor</a></li>
+                            <li class="header_navigation-item"><a href="#">Apps</a></li>
+                            <li class="header_navigation-item"><a href="#">Testimonials</a></li>
+                            <li class="header_navigation-item"><a href="#">About us</a></li>
                         </ul>
                     </div>
                     <div class="hamburger_container">
-                        <div class="menu-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                        <button class="c-hamburger c-hamburger--htx">
+                            <span>toggle menu</span>
+                          </button>
                     </div>                    
                 </nav>                               
-            </div>
-            <div class="header_hero">
-                <div class="hero_text">
-                    <h1>Virtual healthcare for you</h1>
-                    <p>Trafalgar provides progressive, and affordable 
-                        healthcare, accessible on mobile and online 
-                        for everyone</p>
-                        <button class="hero_btn" type="button"><p>Consult today</p></button>
-                </div>
-                <div class="hero_img">
-                    <img src="img/trafalgar-header illustration 1header_healtcare.png" alt="hero img">
-                </div>
-            </div>             
+            </div>                         
         </header>
 
         <main class="main">
+            <section class="hero">
+                <div class="hero_container">
+                    <div class="hero_text">
+                        <h1>Virtual healthcare for you</h1>
+                        <p>Trafalgar provides progressive, and affordable 
+                            healthcare, accessible on mobile and online 
+                            for everyone</p>
+                            <button class="button hero_btn" type="button"><p>Consult today</p></button>
+                    </div>
+                    <div class="hero_img">
+                        <img src="img/trafalgar-header illustration 1header_healtcare.png" alt="hero img">
+                    </div>
+                </div>
+            </section>
             <section class="main_services">
                 <div class="main_services-head">
                     <h2>Our services</h2>
@@ -116,39 +116,39 @@
                     </div>
                 </div>
                 <div class="learn_btn">
-                    <button type="button">Learn more</button>
+                    <button class="button" type="button">Learn more</button>
                 </div>
             </section>
 
             <section class="features">
 
-                <div class="features_healtcare">
-                    <div class="features_healtcare-img">
+                <div class="features_container healtcare">
+                    <div class="features_container-img">
                         <img src="img/features.png" alt="Features image">
                     </div>
-                    <div class="features_healtcare-text">
+                    <div class="features_container-text">
                         <h2>Leading healthcare providers</h2>
                         <p>Trafalgar provides progressive, and affordable healthcare, 
                             accessible on mobile and online for everyone. To us, it’s 
                             not just work. We take pride 
                             in the solutions we deliver</p>
-                        <div class="learn_btn features_healtcare-btn">
-                            <button type="button">Learn more</button>
+                        <div class="learn_btn features_container-btn">
+                            <button class="button" type="button">Learn more</button>
                         </div>
                     </div>                    
                 </div>
-                <div class="features_aplication">
-                    <div class="features_aplication-img">
+                <div class="features_container reverse">
+                    <div class="features_container-img">
                         <img src="img/download.png" alt="Aplication image">
                     </div>
-                    <div class="features_aplication-text">
+                    <div class="features_container-text">
                         <h2>Download our mobile apps</h2>
                         <p>Our dedicated patient engagement app and 
                             web portal allow you to access information 
                             instantaneously (no tedeous form, long calls, 
                             or administrative hassle) and securely</p>
-                        <div class="learn_btn features_aplication-btn">
-                            <button type="button">Download <span><img src="img/arrow.svg" alt=""></span></button>
+                        <div class="learn_btn features_container-btn">
+                            <button class="button" type="button">Download <span><img src="img/arrow.svg" alt=""></span></button>
                         </div>
                     </div>                    
                 </div>
@@ -213,11 +213,11 @@
                                         There are some...</li>
                                     <li class="article_item-link">Read more</li>
                                 </ul>
-                            </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="learn_btn article-btn">
-                        <button type="button">Viev all</button>
+                        <button class="button" type="button">Viev all</button>
                     </div>
                 </div>
             </section>
@@ -266,11 +266,11 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    </footer>    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
     <script src="script/app.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

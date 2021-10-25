@@ -1,30 +1,8 @@
 @media screen and (max-width: 1020px) {
     .hamburger_container {
-        display: flex;        
+        display: block;
     }
-    .hamburger_container-active { 
-        display: flex;
-        position: fixed;
-        top: 60px;
-        right: 12%;
-        & .menu-icon span {
-            opacity: 1;
-        }          
-        & .menu-icon span:nth-child(1) {
-            transform-origin: center center;
-            transform: rotate(-45deg) translate(-20%, 190%);
-            width: 55px;
-        }
-        & .menu-icon span:nth-child(2) {
-            transform: translateX(50px);
-        }
-        & .menu-icon span:nth-child(3) {
-            transform-origin: center center;
-            transform: rotate(45deg) translate(-20%, -190%);
-            width: 55px;
-        }
-    }   
-
+    
     .header_navigation-list {
         position: absolute;
         display: none;
@@ -48,23 +26,32 @@
         transition: 0.3s ease;
         right: -50px;
         overflow: hidden;
+        z-index: 2;
     }
     
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 976px) {
+    .wrapper {
+        padding: 0 6%;
+    }
     .header {
         display: flex;
         flex-direction: column;
     }
-    .header_hero {
+    .hero_container {
+        justify-content: center;
         margin: 0 auto;
         & .hero_text {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            text-align: center;
+
             width: 90%;
             & h1 {
                 width: 90%;
+                text-align: center;
             }
         }
     }
@@ -72,18 +59,23 @@
         display: none;
     }
 
+    .main_services-head h2 {
+        margin-bottom: 10%;
+    }
     .main_services-item {
         & ul {
             width: 300px;
             height: 300px;
         }
     }
-
+    .reverse .features_container-text {
+        margin: 0;
+    }
     .features {
-        &_healtcare {
+        &_container {
             justify-content: center;
         }
-        &_healtcare-text {
+        &_container-text {
             margin: 0;
             width: 100%;
             & h2 {
@@ -98,21 +90,21 @@
                 text-align: center;
             }
         }
-        &_healtcare-btn {
+        &_container-btn {
             margin: 10% auto;
         }
-        &_healtcare-img {
+        &_container-img {
             display: none;
         }
-        &_aplication-img {
+        &_container-img {
             display: none;
         }
 
 
-        &_aplication {
+        &_container {
             justify-content: center;
         }
-        &_aplication-text {
+        &_container-text {
             margin: 0;
             width: 100%;
             & h2 {
@@ -127,13 +119,13 @@
                 text-align: center;
             }
         }
-        &_aplication-btn {
+        &_container-btn {
             margin: 10% auto;
         }
-        &_aplication-img {
+        &_container-img {
             display: none;
         }
-        &_aplication-img {
+        &_container-img {
             display: none;
         }
     }
@@ -157,14 +149,24 @@
         align-items: flex-end;
     }
     .contacts_list-item .list {
-        display: none;
-        
+        display: none;        
+    }
+    .contacts_list-item {
+        z-index: 2;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .main_services-item {
+        margin-right: 0;
+        margin-bottom: 3%;
     }
 }
 
-
 @media screen and (max-width: 500px) {
-
+    .wrapper {
+        padding: 5%;
+    }
     .user {
         &_info {
             flex-direction: column;
