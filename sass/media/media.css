@@ -200,6 +200,9 @@
   .wrapper {
     padding: 5%;
   }
+  .header_navigation {
+    margin-top: 0;
+  }
   .user_info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
