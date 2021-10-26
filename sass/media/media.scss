@@ -39,105 +39,51 @@
         display: flex;
         flex-direction: column;
     }
-    .hero_container {
-        justify-content: center;
-        margin: 0 auto;
-        & .hero_text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+    .header_navigation-item {
+        margin: 0;
+        margin-right: 40px;
+    }
 
-            width: 90%;
-            & h1 {
-                width: 90%;
+    .section_container {
+        flex-direction: column;
+        width: 100%;
+        & .section_item-img {
+            margin: 0;
+            margin-bottom: 10%;
+        }
+        & .section_item-text {
+            align-items: center;
+            width: 100%;
+            & h2 {
+                margin-bottom: 10%;
+            }
+            & h2, p {
                 text-align: center;
             }
+            & h2::after {
+                margin: 0 auto;
+            }
         }
+    } 
+    .healtcare, .aplication {
+        padding: 0;
     }
-    .hero_img img {
-        display: none;
-    }
-
+   
     .main_services-head h2 {
         margin-bottom: 10%;
     }
-    .main_services-item {
-        & ul {
-            width: 300px;
-            height: 300px;
-        }
+    .main_services-head p {
+        width: 100%;
     }
-    .reverse .features_container-text {
-        margin: 0;
-    }
-    .features {
-        &_container {
-            justify-content: center;
-        }
-        &_container-text {
-            margin: 0;
-            width: 100%;
-            & h2 {
-                width: 100%;                
-                text-align: center;
-            }
-            & h2::after {
-                left: 45%;
-            }
-            & p {                
-                width: 100%;
-                text-align: center;
-            }
-        }
-        &_container-btn {
-            margin: 10% auto;
-        }
-        &_container-img {
-            display: none;
-        }
-        &_container-img {
-            display: none;
-        }
-
-
-        &_container {
-            justify-content: center;
-        }
-        &_container-text {
-            margin: 0;
-            width: 100%;
-            & h2 {
-                width: 100%;                
-                text-align: center;
-            }
-            & h2::after {
-                left: 45%;
-            }
-            & p {                
-                width: 100%;
-                text-align: center;
-            }
-        }
-        &_container-btn {
-            margin: 10% auto;
-        }
-        &_container-img {
-            display: none;
-        }
-        &_container-img {
-            display: none;
-        }
-    }
+    
+   
 
     .testimonials_container .user {
         display: flex;
         flex-direction: column;
         align-items: center;
         &_info {
-            align-self: start;
             width: auto;
-            margin-left: 10%;
         }
         &_review {
             width: 80%;
@@ -164,6 +110,9 @@
         margin-right: 0;
         margin-bottom: 3%;
     }
+    .main_services-badges {
+        margin-bottom: 10%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -182,6 +131,9 @@
         &_info img {
             transform: scale(0.7);
         }
+    }    
+    .swiper-wrapper {
+        height: 470px;
     }
     .swiper-slide {
         margin: 0 1%;
@@ -198,6 +150,15 @@
     }
     .contacts_list {
         align-items: flex-start;
+    }
+
+    .testimonials {
+        & .user_info img {
+            padding: 0;
+        }
+        & .user_review blockquote {
+            text-align: center;
+        }
     }
     
 } 
