@@ -178,41 +178,10 @@ a {
 }
 
 .main {
-    &_services-head {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 5%;
-        & h2 {
-            font-style: normal;
-            font-weight: bold;
-            font-size: 36px;
-            line-height: 156%;
-            color: #000000;
-            margin-bottom: 5%;
-            mix-blend-mode: normal;
-        }
-        & h2:after {
-            content: ' ';
-            display: block;
-            position: relative;
-            top: 25px;
-            margin: 0 auto;
-            width: 56px;
-            border-bottom: 2px solid black;
-        }
-        & p {
-            font-style: normal;
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 167%;        
-            text-align: center;
-            color: #7D7987;
-            width: 78%;
-            mix-blend-mode: normal;
-            }
-    }
+    margin-bottom: 20%;    
 }
+
+
 .hero {
     margin-bottom: 15%;
 
@@ -233,9 +202,7 @@ a {
 }
 
 
-.main_services {
-    margin-bottom: 15%;
-}
+
 .main_services-list ul {
     display: flex;
     justify-content: center;
@@ -249,7 +216,7 @@ a {
         justify-content: space-between;
         align-items: flex-start;
         width: 350px;
-        height: 354px;
+        height: 100%;
         padding: 15% 10%;
         background: #FFFFFF;            
         box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
@@ -276,10 +243,10 @@ a {
         mix-blend-mode: normal;
     }
 }
+
 .section_container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15%;
     width: 105%;
     & .section_item-img {
         & img {
@@ -327,8 +294,31 @@ a {
         margin: 0;
     }  
 }
+.services {
+    margin-bottom: 15%;
+    & .section_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & .section_item-text {
+            width: 80%;
+            & h2 {
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 5%;
+            }
+            & h2::after {
+                margin: 0 auto;
+            }
+            & p {
+                text-align: center;
+            }
+        }
+    }
+}
 .reverse {
     flex-direction: row-reverse;
+    margin-bottom: 10%;
     & .features_container-text {
         margin-right: 10%;
     }
@@ -374,7 +364,8 @@ a {
 
 .testimonials {
     width: 92%;
-    margin: 15% auto;
+    margin: 0 auto;
+    margin-bottom: 10%;
     padding: 5%;
     background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
     border-radius: 24px;
@@ -532,7 +523,6 @@ a {
 
 
 .footer {
-    margin-top: 10%;
     &_container {
         display: flex;
         height: 20%;

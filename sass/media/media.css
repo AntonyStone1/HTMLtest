@@ -160,9 +160,6 @@
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
-  .swiper-wrapper {
-    height: 470px;
-  }
   .swiper-slide {
     margin: 0 1%;
     -webkit-transform: scale(0.7);
