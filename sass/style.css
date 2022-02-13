@@ -42,6 +42,7 @@ a:visited {
 
 .hamburger_container {
   display: none;
+  z-index: 10;
 }
 
 .c-hamburger {
